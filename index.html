@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable and Fruit Detector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image of Vegetables and Fruits</h1>
+        <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit" id="uploadButton">Upload</button>
+        </form>
+        <div id="results">
+            <h2>Detected Items</h2>
+            <ul id="detectedItems"></ul>
+            <h2>Recipe Suggestions</h2>
+            <ul id="recipeSuggestions"></ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('uploadForm').onsubmit = async function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            displayResults(data);
+            document.getElementById('uploadButton').classList.add('clicked');
+        };
+
+        function displayResults(data) {
+            const detectedItemsList = document.getElementById('detectedItems');
+            const recipeSuggestionsList = document.getElementById('recipeSuggestions');
+
+            detectedItemsList.innerHTML = '';
+            recipeSuggestionsList.innerHTML = '';
+
+            data.detectedItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                detectedItemsList.appendChild(li);
+            });
+
+            data.recipeSuggestions.split('\n').forEach(suggestion => {
+                const li = document.createElement('li');
+                li.textContent = suggestion;
+                recipeSuggestionsList.appendChild(li);
+            });
+
+            document.getElementById('results').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
