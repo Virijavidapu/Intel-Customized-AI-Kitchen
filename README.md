@@ -37,11 +37,11 @@ Our solution, the **Customized AI Kitchen**, leverages artificial intelligence t
 
 For any questions or feedback, feel free to reach out to us:
 
-- **Virija**: [your-email@example.com](mailto:your-email@example.com)
-- **Sunny Reddy**: [your-email@example.com](mailto:your-email@example.com)
-- **Srinivas**: [your-email@example.com](mailto:your-email@example.com)
-- **Dhanush**: [your-email@example.com](mailto:your-email@example.com)
-- **NagarKrishna**: [your-email@example.com](mailto:your-email@example.com)
+- **Virija**: [21311a6631@sreenidhi.edu.in](mailto:21311a6631@sreenidhi.edu.in)
+- **Sunny Reddy**: [2231a66g4@sreendhi.edu.in](mailto:2231a66g4@sreendhi.edu.in)
+- **Srinivas**: [21311a6608@sreenidhi.edu.in](mailto:21311a6608@sreenidhi.edu.in)
+- **Dhanush**: [22311a6602@sreenidhi.edu.in](mailto:22311a6602@sreenidhi.edu.in)
+- **Naga Krishna**: [21311a6625@sreenidhi.edu.in](mailto:2311a6625@sreenidhi.edu.in)
 
 ## Acknowledgements
 
