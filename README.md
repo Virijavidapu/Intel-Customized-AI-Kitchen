@@ -1,6 +1,3 @@
-Here's a customized README file for your Intel Unnati 2024 project:
-
-
 # Customized AI Kitchen for India
 
 Welcome to the **Customized AI Kitchen for India** project, developed for Intel Unnati 2024. This project aims to revolutionize the Indian kitchen experience by integrating artificial intelligence to create a customized and efficient cooking environment.
